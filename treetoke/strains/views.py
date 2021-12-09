@@ -10,5 +10,5 @@ def index(request):
 
 
 class StrainsList(viewsets.ModelViewSet):
-    queryset = Strains.objects.all()[0:100]
+    queryset = Strains.objects.all()[0:10]
     serializer_class = StrainsSerializer
