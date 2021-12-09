@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--!&l#3dsczxd@vb)m0lft9pum+&o)zch6!!q#5hp!)60_tigu$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['treetoke-backend.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
