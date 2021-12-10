@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -60,13 +59,13 @@ CORS_ALLOW_METHODS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'treetoke.urls'
@@ -99,8 +98,7 @@ DATABASES = {
             'NAME': 'treetoke',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://admin:TreeToke2021@cluster0.pha9o.mongodb.net/treetoke?retryWrites=true&w=majority',
-                'authMechanism': 'SCRAM-SHA-1'
+                'host': 'mongodb+srv://admin:TreeToke2021@cluster0.pha9o.mongodb.net/treetoke?retryWrites=true&w=majority'
             }  
         }
 }
