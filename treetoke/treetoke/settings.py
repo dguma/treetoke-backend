@@ -99,7 +99,8 @@ DATABASES = {
             'NAME': 'treetoke',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://admin:TreeToke2021@cluster0.pha9o.mongodb.net/treetoke?retryWrites=true&w=majority'
+                'host': 'mongodb+srv://admin:TreeToke2021@cluster0.pha9o.mongodb.net/treetoke?retryWrites=true&w=majority',
+                'authMechanism': 'SCRAM-SHA-1'
             }  
         }
 }
