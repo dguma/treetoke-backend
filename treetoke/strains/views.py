@@ -5,8 +5,8 @@ from .models import Strains
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'treetoke/index.html')
+# def index(request):
+#     return render(request, 'treetoke/index.html')
 
 
 class StrainsList(viewsets.ModelViewSet):
